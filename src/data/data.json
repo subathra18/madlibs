@@ -1,0 +1,126 @@
+{
+  "initialQuestions": [
+    {
+      "question": "what's your name jin jin jak",
+      "answerType": "input",
+      "key": "name",
+      "id": 1,
+      "CTAType": "next"
+    },
+    {
+      "question": "who do you wanna express your love",
+      "type": "input",
+      "key": "recipient",
+      "id": 2,
+      "CTAType": "next"
+    },
+    {
+      "question": "relationship with the person mentioned",
+      "key": "relationship",
+      "CTAType": "InitialSubmit",
+      "id": 3,
+      "option": ["mom", "dad", "girlfriend", "boyfriend", "daughter", "son"]
+    }
+  ],
+  "nextSetOfQuestions": [
+    {
+      "question": "what's your name jin jin jak next",
+      "answerType": "input",
+      "key": "name",
+      "id": 1,
+      "CTAType": "next"
+    },
+    {
+      "question": "who do you wanna express your love next",
+      "type": "input",
+      "key": "recipient",
+      "id": 2,
+      "CTAType": "next"
+    },
+    {
+      "question": "relationship with the person mentioned next",
+      "key": "relationship",
+      "CTAType": "InitialSubmit",
+      "id": 3,
+      "option": ["mom", "dad", "girlfriend", "boyfriend", "daughter", "son"]
+    }
+  ],
+  "fillMadlibs": {
+    "love": "Dear $recipient ,love u my $relationship",
+    "son": "Dear $recipient ,love u my $relationship",
+    "daugher": "Dear $recipient love u  my $relationship"
+  },
+  "madlibs": {
+    "love": {
+      "madlibId": 1,
+      "relation": "love",
+      "questionaire": [
+        {
+          "question": "where did you first meet",
+          "key": "place",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "how many years of relationship",
+          "key": "years_of_relationship",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "what was the weather like when u met",
+          "key": "weather",
+          "CTAType": "submit",
+          "option": ["sunny", "cloudy", "rainy", "stormy", "pleasant"]
+        }
+      ]
+    },
+
+    "daughter": {
+      "madlibId": 2,
+      "relation": "daughter",
+      "questionaire": [
+        {
+          "question": "how would you describe your daughter",
+          "key": "description",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "How old is your daughter",
+          "key": "years_of_relationship",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "what you want to express to her",
+          "key": "expressions",
+          "CTAType": "submit"
+        }
+      ]
+    },
+    "son": {
+      "madlibId": 3,
+      "relation": "son",
+      "questionaire": [
+        {
+          "question": "how would you describe your son",
+          "key": "description",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "How old is your son",
+          "key": "years_of_relationship",
+          "CTAType": "next",
+          "option": []
+        },
+        {
+          "question": "what you want to express to him",
+          "key": "expressions",
+          "CTAType": "submit"
+        }
+      ]
+    }
+  }
+}

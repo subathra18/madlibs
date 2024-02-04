@@ -1,0 +1,74 @@
+{
+  "questionnaires": {
+    "initialQuestionnaire": {
+      "madlibId": 0,
+      "key": "initialQuestionnaire",
+      "questionnaire": [
+        {
+          "question": "what's your name ",
+          "type": "input",
+          "key": "name",
+          "id": 1
+        },
+        {
+          "question": "who do you wanna express your love",
+          "type": "input",
+          "key": "recipient",
+          "id": 2
+        },
+        {
+          "question": "relationship with the person mentioned",
+          "type": "dropdown",
+          "key": "relationship",
+          "id": 3,
+          "options": [
+            "mom",
+            "dad",
+            "girlfriend",
+            "boyfriend",
+            "daughter",
+            "son"
+          ]
+        }
+      ]
+    },
+    "love": [],
+    "mom": [],
+    "son": {
+      "madlibId": 3,
+      "key": "son",
+      "questionnaire": [
+        {
+          "question": "how would you describe your son",
+          "key": "description",
+          "type": "input"
+        },
+        {
+          "question": "How old is your son",
+          "key": "years_of_relationship",
+          "type": "input"
+        },
+        {
+          "question": "what you want to express to him",
+          "key": "expressions",
+          "type": "input"
+        }
+      ]
+    },
+    "daughter": []
+  },
+  "madlibs": [
+    {
+      "id": 1,
+      "madlib": "Dear $recipient ,love u my $relationship "
+    },
+    {
+      "id": 2,
+      "madlib": "Dear $recipient ,love u my $relationship "
+    },
+    {
+      "id": 3,
+      "madlib": "Dear $recipient ,love u my $relationship "
+    }
+  ]
+}

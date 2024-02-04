@@ -13,7 +13,7 @@ const Poem = () => {
     <div className="columns-2 py-8">
       <div className="card w-96   shadow-xl">
         <div className="card-body">
-          <h2 className="card-title">Card title!</h2>
+          <h2 className="card-title">Poem for you!</h2>
           <p>{poem}</p>
           <div className="card-actions justify-end">
             <button

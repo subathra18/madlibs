@@ -56,7 +56,7 @@ const CardContainer = () => {
   };
 
   const getButtonText = () => {
-    return buttonText;
+    // return buttonText;
     return isInitialQuestionSetOver && questionIndex == questionObj.length - 1
       ? "SUBMIT"
       : buttonText;

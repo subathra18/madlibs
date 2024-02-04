@@ -45,12 +45,12 @@
         },
         {
           "question": "How old is your son",
-          "key": "years_of_relationship",
+          "key": "age",
           "type": "input"
         },
         {
-          "question": "what you want to express to him",
-          "key": "expressions",
+          "question": "what is his favourite animal",
+          "key": "animal",
           "type": "input"
         }
       ]
@@ -68,7 +68,7 @@
     },
     {
       "id": 3,
-      "madlib": "Dear $recipient ,love u my $relationship "
+      "madlib": "In a world so adoring and sweet,you are my little star ,you make my heart skip a beat,through the $age years ,we shared moments so divine,you are my $animal,it is heartwarming to have $description like you ,my dear $recipient,by $name"
     }
   ]
 }

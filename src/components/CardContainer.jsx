@@ -31,24 +31,32 @@ const CardContainer = () => {
 
   const submitAnswers = (ans) => {
     console.log("on sbmit", [...answer, ans]);
-    dispatch({
-      type: generateMadlib,
-      payload: {
+    // dispatch({
+    //   type: "generateMadlib",
+    //   payload: {
+    //     answers: [...answer, ans],
+    //     questionnaireID: currentQuestionnaire.madlibId,
+    //   },
+    // });
+    dispatch(
+      generateMadlib({
         answers: [...answer, ans],
         questionnaireID: currentQuestionnaire.madlibId,
-      },
-    });
+      })
+    );
     setShowPoem(true);
   };
 
   const fetchNextSetOfQuestions = (ans) => {
-    dispatch({
-      type: fetchNextQuestionnaire,
-      payload: { answer: [...answer, ans] },
-    });
+    // dispatch({
+    //   type: "fetchNextQuestionnaire",
+    //   payload: { answer: [...answer, ans] },
+    // });
+    dispatch(fetchNextQuestionnaire({ answer: [...answer, ans] }));
   };
 
   const getButtonText = () => {
+    return buttonText;
     return isInitialQuestionSetOver && questionIndex == questionObj.length - 1
       ? "SUBMIT"
       : buttonText;

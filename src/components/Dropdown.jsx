@@ -1,9 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect } from "react";
 
 const Dropdown = ({ options, selectedValue, onSelectHandler }) => {
+  useEffect(() => {
+    const val = selectedValue || options[0];
+    onSelectHandler(val);
+  }, []);
+
   return (
-    <div className="dropdown dropdown-end">
+    <div className="dropdown">
       <div tabIndex={0} role="button" className="btn m-1">
         {selectedValue || options[0]}
       </div>

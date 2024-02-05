@@ -21,19 +21,88 @@
           "type": "dropdown",
           "key": "relationship",
           "id": 3,
-          "options": [
-            "mom",
-            "dad",
-            "girlfriend",
-            "boyfriend",
-            "daughter",
-            "son"
-          ]
+          "options": ["mom", "dad", "love", "daughter", "son"]
         }
       ]
     },
-    "love": [],
-    "mom": [],
+    "love": {
+      "madlibId": 1,
+      "key": "love",
+      "questionnaire": [
+        {
+          "question": "where did you first meet",
+          "key": "place",
+          "type": "input"
+        },
+        {
+          "question": "How many years of relationship",
+          "key": "age",
+          "type": "input"
+        },
+        {
+          "question": "what is your lover's best quality",
+          "key": "quality",
+          "type": "input"
+        },
+        {
+          "question": "write a brief note to your love on your behalf",
+          "key": "notes",
+          "type": "input"
+        }
+      ]
+    },
+    "mom": {
+      "madlibId": 2,
+      "key": "mom",
+      "questionnaire": [
+        {
+          "question": "how would you describe your mom",
+          "key": "description",
+          "type": "input"
+        },
+        {
+          "question": "How old are you",
+          "key": "age",
+          "type": "input"
+        },
+        {
+          "question": "what is her finest quality ",
+          "key": "quality",
+          "type": "input"
+        },
+        {
+          "question": "write a brief note to your mom on your behalf",
+          "key": "notes",
+          "type": "input"
+        }
+      ]
+    },
+    "dad": {
+      "madlibId": 4,
+      "key": "dad",
+      "questionnaire": [
+        {
+          "question": "how would you describe your dad",
+          "key": "description",
+          "type": "input"
+        },
+        {
+          "question": "How old are you",
+          "key": "age",
+          "type": "input"
+        },
+        {
+          "question": "what is his finest quality ",
+          "key": "quality",
+          "type": "input"
+        },
+        {
+          "question": "write a brief note to your dad on your behalf",
+          "key": "notes",
+          "type": "input"
+        }
+      ]
+    },
     "son": {
       "madlibId": 3,
       "key": "son",
@@ -44,31 +113,69 @@
           "type": "input"
         },
         {
-          "question": "How old is your son",
+          "question": "How old is your he",
           "key": "age",
           "type": "input"
         },
         {
-          "question": "what is his favourite animal",
-          "key": "animal",
+          "question": "what is his nick name",
+          "key": "nickname",
+          "type": "input"
+        },
+        {
+          "question": "write a brief note to your son on your behalf",
+          "key": "notes",
           "type": "input"
         }
       ]
     },
-    "daughter": []
+    "daughter": {
+      "madlibId": 5,
+      "key": "daughter",
+      "questionnaire": [
+        {
+          "question": "how would you describe your daughter",
+          "key": "description",
+          "type": "input"
+        },
+        {
+          "question": "How old is your daughter",
+          "key": "age",
+          "type": "input"
+        },
+        {
+          "question": "what is her nick name",
+          "key": "nickname",
+          "type": "input"
+        },
+        {
+          "question": "write a brief note to your daughter on your behalf",
+          "key": "notes",
+          "type": "input"
+        }
+      ]
+    }
   },
   "madlibs": [
     {
       "id": 1,
-      "madlib": "Dear $recipient ,love u my $relationship "
+      "madlib": "when I first met you at $place , I felt a love story unfold,In the sanctuary of love, where emotions bloom,For in your arms, I've found my sanctuary,A haven of love, where hearts roam free.Throughout the $age of our love ,I fell in love with your $quality.  In this symphony of love, forever to be,You are my melody, my lover, eternally.'$notes' from $name to $recipient"
     },
     {
       "id": 2,
-      "madlib": "Dear $recipient ,love u my $relationship "
+      "madlib": "My heart overflows with gratitude and love for the incredible woman you are,my mom. Your $description sways me away.In the tapestry of my memories, throughout this $age years you've woven threads of joy, laughter, and understanding.As the years pass, my appreciation for your $quality deepens.$notes from $name to $recipient"
     },
     {
       "id": 3,
-      "madlib": "In a world so adoring and sweet,you are my little star ,you make my heart skip a beat,through the $age years ,we shared moments so divine,you are my $animal,it is heartwarming to have $description like you ,my dear $recipient,by $name"
+      "madlib": "In a world so adoring and sweet,you are my little star ,you make my heart skip a beat,through the $age years ,we shared moments so divine,you are my $nickname,it is heartwarming to have $description like you ,my dear $recipient,by $name."
+    },
+    {
+      "id": 4,
+      "madlib": "I am flooded with a wave of gratitude and warmth, compelled to express the depth of my feelings for you.Throughout the $age years , you've been a constant presence, a source of comfort, and a figure of resilience.Your $description sways me away.As the years pass, my appreciation for your $quality deepens.$notes from $name to $recipient"
+    },
+    {
+      "id": 5,
+      "madlib": "In a world so adoring and sweet,you are my little star ,you make my heart skip a beat,through the $age years ,we shared moments so divine,you are my $nickname,it is heartwarming to have $description like you ,my dear $recipient,by $name"
     }
   ]
 }

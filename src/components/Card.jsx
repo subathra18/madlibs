@@ -12,7 +12,7 @@ const Card = ({ questionObj, handleButtonClick, buttonText }) => {
     setAnswer("");
   };
   return (
-    <div className="w-80 text-cl-text flex-row justify-content-center">
+    <div className="w-85 text-cl-text flex-row justify-content-center">
       <p className="text-3xl font-medium">{question}</p>
       <div className="text-2xl py-6">
         {type == "input" ? (

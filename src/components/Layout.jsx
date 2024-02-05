@@ -5,7 +5,7 @@ import Poem from "./Poem";
 
 const Layout = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 bg-cl-white">
+    <div className="hero min-h-screen w-84 bg-base-200 bg-cl-white">
       <div className="hero-content gap-12 flex-col lg:flex-row">
         <Hero></Hero>
         <CardContainer></CardContainer>
